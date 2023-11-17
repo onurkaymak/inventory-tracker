@@ -18,7 +18,7 @@ const CoffeeDetail = (props) => {
         disabled={coffee.isOutOfStock && true}
       >Sell Coffee (1lb)
       </button>
-      <button onClick={props.onClickEdit}>Update Ticket</button>
+      <button onClick={props.onClickEdit}>Update Coffee</button>
     </React.Fragment >
   );
 }
