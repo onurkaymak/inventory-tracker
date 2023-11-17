@@ -12,9 +12,23 @@ class CoffeeControl extends React.Component {
 
 
   render() {
+    let visibleComponent = null;
+    let buttonText = null;
+
+    if (this.state.mainCoffeeList.length === 0) {
+      visibleComponent = "There is nothing in the inventory yet.";
+      buttonText = "Add Coffee to Inventory"
+    }
+
+
+
+
     return (
-      <h1>Coffee Control Test</h1>
-    )
+      <React.Fragment>
+        {visibleComponent}
+        <button>{buttonText}</button>
+      </React.Fragment>
+    );
   }
 }
 
