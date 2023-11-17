@@ -16,9 +16,16 @@ class CoffeeControl extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(prevState => ({
-      isAddFormVisible: !prevState.isAddFormVisible
-    }));
+    if (this.state.selectedCoffee != null) {
+      this.setState({
+        selectedCoffee: null,
+        isAddFormVisible: false
+      })
+    } else {
+      this.setState(prevState => ({
+        isAddFormVisible: !prevState.isAddFormVisible
+      }));
+    }
   }
 
   handleNewCoffee = (newCoffee) => {
