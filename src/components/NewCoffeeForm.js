@@ -9,10 +9,10 @@ const NewCoffeeForm = (props) => {
     event.preventDefault();
 
     const newCoffee = {
-      name: event.target.name.value,
-      origin: event.target.origin.value,
-      price: parseInt(event.target.price.value),
-      roast: event.target.roast,
+      name: event.target[0].value,
+      origin: event.target[1].value,
+      price: parseInt(event.target[2].value),
+      roast: event.target[3].value,
       id: v4()
     }
 
