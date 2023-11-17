@@ -5,7 +5,7 @@ const Coffee = (props) => {
 
   return (
     <React.Fragment>
-      <div>
+      <div onClick={() => props.onCoffeeClicked(props.id)}>
         <div>Name: <strong>{props.name}</strong></div>
         <div>Coffee Id: {props.id}</div>
         <div>Origin: {props.origin}</div>
@@ -22,7 +22,8 @@ Coffee.propTypes = {
   origin: PropTypes.string,
   price: PropTypes.number,
   roast: PropTypes.string,
-  id: PropTypes.string
+  id: PropTypes.string,
+  onCoffeeClicked: PropTypes.func
 };
 
 export default Coffee;
