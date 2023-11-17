@@ -1,9 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { v4 } from 'uuid';
+// import PropTypes from "prop-types";
+// import { v4 } from 'uuid';
 import ReusableForm from "../utils/ReusableForm";
 
-const NewCoffeeForm = (props) => {
+const NewCoffeeForm = () => {
 
   const handleNewCoffeeFormSubmission = (event) => {
     event.preventDefault();
