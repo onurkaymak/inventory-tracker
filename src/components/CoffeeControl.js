@@ -1,6 +1,7 @@
 import React from 'react';
 import NewCoffeeForm from './NewCoffeeForm';
 import CoffeeList from './CoffeeList';
+import CoffeeDetail from './CoffeeDetail';
 
 
 class CoffeeControl extends React.Component {
@@ -39,13 +40,16 @@ class CoffeeControl extends React.Component {
     let visibleComponent = null;
     let buttonText = null;
 
-
-    if (this.state.isAddFormVisible) {
+    if (this.state.selectedCoffee != null) {
+      visibleComponent = <CoffeeDetail coffee={this.state.selectedCoffee} />
+      buttonText = "Return to Coffee List"
+    }
+    else if (this.state.isAddFormVisible) {
       visibleComponent = <NewCoffeeForm onCreateCoffee={this.handleNewCoffee} />
       buttonText = "Return to Coffee List"
     } else {
       if (this.state.mainCoffeeList.length !== 0) {
-        visibleComponent = <CoffeeList coffeeList={this.state.mainCoffeeList} />
+        visibleComponent = <CoffeeList coffeeList={this.state.mainCoffeeList} onCoffeeSelection={this.handleSelectedCoffee} />
       } else {
         visibleComponent = "There is nothing in the inventory yet."
       }
