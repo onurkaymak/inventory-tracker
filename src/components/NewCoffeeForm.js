@@ -1,13 +1,22 @@
 import React from "react";
-// import PropTypes from "prop-types";
-// import { v4 } from 'uuid';
+import PropTypes from "prop-types";
+import { v4 } from 'uuid';
 import ReusableForm from "../utils/ReusableForm";
 
-const NewCoffeeForm = () => {
+const NewCoffeeForm = (props) => {
 
   const handleNewCoffeeFormSubmission = (event) => {
     event.preventDefault();
-    console.log(event.target);
+
+    const newCoffee = {
+      name: event.target.name.value,
+      origin: event.target.origin.value,
+      price: parseInt(event.target.price.value),
+      roast: event.target.roast,
+      id: v4()
+    }
+
+    props.onCreateCoffee(newCoffee);
   }
 
   return (
@@ -20,7 +29,7 @@ const NewCoffeeForm = () => {
 }
 
 NewCoffeeForm.propTypes = {
-
+  onCreateCoffee: PropTypes.func
 };
 
 export default NewCoffeeForm;
