@@ -1,5 +1,6 @@
 import React from 'react';
 import NewCoffeeForm from './NewCoffeeForm';
+import CoffeeList from './CoffeeList';
 
 
 class CoffeeControl extends React.Component {
@@ -36,18 +37,16 @@ class CoffeeControl extends React.Component {
     if (this.state.isAddFormVisible) {
       visibleComponent = <NewCoffeeForm onCreateCoffee={this.handleNewCoffee} />
       buttonText = "Return to Coffee List"
+    } else {
+      visibleComponent = <CoffeeList coffeList={this.state.mainCoffeeList} />
     }
-    else if (this.state.mainCoffeeList.length === 0) {
-      visibleComponent = "There is nothing in the inventory yet.";
-      buttonText = "Add Coffee to Inventory"
-    }
-
-
 
 
     return (
       <React.Fragment>
         {visibleComponent}
+        {this.state.mainCoffeeList.length === 0 && "There is nothing in the inventory yet."}
+        <br />
         <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
