@@ -8,9 +8,10 @@ const Coffee = (props) => {
       <div>
         <div>Name: <strong>{props.name}</strong></div>
         <div>Coffee Id: {props.id}</div>
-        <div>{props.origin}</div>
-        <div>{props.roast}</div>
-        <div>{props.price}</div>
+        <div>Origin: {props.origin}</div>
+        <div>Roast: {props.roast}</div>
+        <div>Price: ${props.price}</div>
+        <div>Quantity: {props.quantity} lb</div>
       </div>
     </React.Fragment>
   );

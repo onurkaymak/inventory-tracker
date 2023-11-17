@@ -16,6 +16,7 @@ const CoffeeList = (props) => {
           origin={coffee.origin}
           price={coffee.price}
           roast={coffee.roast}
+          quantity={coffee.quantity}
         />)}
     </React.Fragment>
   );

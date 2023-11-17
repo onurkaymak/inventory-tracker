@@ -9,11 +9,12 @@ const NewCoffeeForm = (props) => {
     event.preventDefault();
 
     const newCoffee = {
+      id: v4(),
       name: event.target[0].value,
       origin: event.target[1].value,
       price: parseInt(event.target[2].value),
       roast: event.target[3].value,
-      id: v4()
+      quantity: 130
     }
 
     props.onCreateCoffee(newCoffee);
