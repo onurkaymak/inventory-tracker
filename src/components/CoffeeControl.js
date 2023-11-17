@@ -42,13 +42,26 @@ class CoffeeControl extends React.Component {
     this.setState({ selectedCoffee }); // ES6 way to set object key-value.
   };
 
+  handleCoffeeSale = (id) => {
+    let selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0];
+    let newMainCoffeeList = this.state.mainCoffeeList.filter(coffee => coffee.id !== id);
+    selectedCoffee.quantity--;
+    newMainCoffeeList.push(selectedCoffee);
+
+    this.setState({
+      mainCoffeeList: newMainCoffeeList
+    })
+
+    console.log(newMainCoffeeList)
+  }
+
 
   render() {
     let visibleComponent = null;
     let buttonText = null;
 
     if (this.state.selectedCoffee != null) {
-      visibleComponent = <CoffeeDetail coffee={this.state.selectedCoffee} />
+      visibleComponent = <CoffeeDetail coffee={this.state.selectedCoffee} onCoffeeSale={this.handleCoffeeSale} />
       buttonText = "Return to Coffee List"
     }
     else if (this.state.isAddFormVisible) {
