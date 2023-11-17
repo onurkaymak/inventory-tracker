@@ -18,6 +18,7 @@ const CoffeeList = (props) => {
           roast={coffee.roast}
           quantity={coffee.quantity}
           onCoffeeClicked={props.onCoffeeSelection}
+          isOutOfStock={coffee.isOutOfStock}
         />)}
     </React.Fragment>
   );

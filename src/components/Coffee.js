@@ -6,7 +6,11 @@ const Coffee = (props) => {
   return (
     <React.Fragment>
       <div onClick={() => props.onCoffeeClicked(props.id)}>
+        {props.isOutOfStock === true && <strong>This product is currently sold out.</strong>}
+        <br />
+        <br />
         <div>Name: <strong>{props.name}</strong></div>
+        <br />
         <div>Coffee Id: {props.id}</div>
         <div>Origin: {props.origin}</div>
         <div>Roast: {props.roast}</div>
