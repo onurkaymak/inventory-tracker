@@ -6,10 +6,11 @@ const Coffee = (props) => {
   return (
     <React.Fragment>
       <div>
-        <h3>{props.name} - {props.id}</h3>
+        <div>Name: <strong>{props.name}</strong></div>
+        <div>Coffee Id: {props.id}</div>
         <div>{props.origin}</div>
-        <div>{props.price}</div>
         <div>{props.roast}</div>
+        <div>{props.price}</div>
       </div>
     </React.Fragment>
   );
