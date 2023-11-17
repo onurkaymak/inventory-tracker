@@ -14,7 +14,8 @@ const NewCoffeeForm = (props) => {
       origin: event.target[1].value,
       price: parseInt(event.target[2].value),
       roast: event.target[3].value,
-      quantity: 130
+      quantity: 5,
+      isOutOfStock: false
     }
 
     props.onCreateCoffee(newCoffee);
