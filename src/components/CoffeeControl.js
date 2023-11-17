@@ -18,6 +18,15 @@ class CoffeeControl extends React.Component {
     }));
   }
 
+  handleNewCoffee = (newCoffee) => {
+    const newMainCoffeeList = this.state.mainCoffeeList.concat(newCoffee);
+
+    this.setState({
+      mainCoffeeList: newMainCoffeeList,
+      isAddFormVisible: false
+    });
+  };
+
 
   render() {
     let visibleComponent = null;
@@ -25,7 +34,7 @@ class CoffeeControl extends React.Component {
 
 
     if (this.state.isAddFormVisible) {
-      visibleComponent = <NewCoffeeForm />
+      visibleComponent = <NewCoffeeForm onCreateCoffee={this.handleNewCoffee} />
       buttonText = "Return to Coffee List"
     }
     else if (this.state.mainCoffeeList.length === 0) {
