@@ -43,16 +43,19 @@ class CoffeeControl extends React.Component {
   };
 
   handleCoffeeSale = (id) => {
-    let selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0];
-    let newMainCoffeeList = this.state.mainCoffeeList.filter(coffee => coffee.id !== id);
-    selectedCoffee.quantity--;
-    newMainCoffeeList.push(selectedCoffee);
+    // When we use the method shown in Help Queue project, selected item changes its position in the list after edit its state, I think that's bad UI experience. 
+    //I implemented a way to keep its position at the list after any changes in the state.
+
+    let selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0]; // Find the selected coffee by id.
+    const selectedCoffeeIndex = this.state.mainCoffeeList.indexOf(selectedCoffee); // Find the selected coffee's index value to transfer into updated list.
+    let newMainCoffeeList = this.state.mainCoffeeList.filter(coffee => coffee.id !== id); // Create an new list without selected coffee.
+    selectedCoffee.quantity--; // Let's sell some coffee!
+    newMainCoffeeList.splice(selectedCoffeeIndex, 0, selectedCoffee); // Add selectedCoffee with updated state into new list.
 
     this.setState({
-      mainCoffeeList: newMainCoffeeList
+      mainCoffeeList: newMainCoffeeList // Update the state without break any state rules.
     })
 
-    console.log(newMainCoffeeList)
   }
 
 
