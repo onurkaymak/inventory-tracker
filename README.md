@@ -71,6 +71,10 @@
 ### 📖 Description
 <!-- A national park API that functions as a back-end utilizing RESTful operations and JSON Web Tokens (JWT) for authentication to keep the API Read-Only except for authenticated users. -->
 
+### Component Diagram
+
+![Alt text](<component diagram.png>)
+
 ### 🦠 Known Bugs
 
 * If any bugs are discovered, please contact the author(s).
