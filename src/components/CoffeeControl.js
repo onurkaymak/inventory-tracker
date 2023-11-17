@@ -9,7 +9,8 @@ class CoffeeControl extends React.Component {
     super(props);
     this.state = {
       mainCoffeeList: [],
-      isAddFormVisible: false
+      isAddFormVisible: false,
+      selectedCoffee: null
     };
   }
 
@@ -26,6 +27,11 @@ class CoffeeControl extends React.Component {
       mainCoffeeList: newMainCoffeeList,
       isAddFormVisible: false
     });
+  };
+
+  handleSelectedCoffee = (id) => {
+    const selectedCoffee = this.state.mainCoffeeList.filter(coffee => coffee.id === id)[0];
+    this.setState({ selectedCoffee }); // ES6 way to set object key-value.
   };
 
 
