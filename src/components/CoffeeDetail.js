@@ -6,15 +6,19 @@ const CoffeeDetail = (props) => {
 
   return (
     <React.Fragment>
-      <div>Name: <strong>{coffee.name}</strong></div>
+      <div>Name: <strong>{coffee.name}</strong>{coffee.isOutOfStock === true && "This product is currently sold out."}</div>
       <div>Coffee Id: {coffee.id}</div>
       <div>Origin: {coffee.origin}</div>
       <div>Roast: {coffee.roast}</div>
       <div>Price: ${coffee.price}</div>
       <div>Quantity: {coffee.quantity} lb</div>
       <hr />
-      <button onClick={() => onCoffeeSale(coffee.id)}>Sell Coffee (1lb)</button>
-    </React.Fragment>
+      <button onClick=
+        {() => onCoffeeSale(coffee.id)}
+        disabled={coffee.isOutOfStock && true}
+      >Sell Coffee (1lb)
+      </button>
+    </React.Fragment >
   );
 }
 
