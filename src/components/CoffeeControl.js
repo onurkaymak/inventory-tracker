@@ -38,14 +38,19 @@ class CoffeeControl extends React.Component {
       visibleComponent = <NewCoffeeForm onCreateCoffee={this.handleNewCoffee} />
       buttonText = "Return to Coffee List"
     } else {
-      visibleComponent = <CoffeeList coffeList={this.state.mainCoffeeList} />
+      if (this.state.mainCoffeeList.length !== 0) {
+        visibleComponent = <CoffeeList coffeeList={this.state.mainCoffeeList} />
+      } else {
+        visibleComponent = "There is nothing in the inventory yet."
+      }
+      buttonText = "Add New Coffee"
     }
 
 
     return (
       <React.Fragment>
         {visibleComponent}
-        {this.state.mainCoffeeList.length === 0 && "There is nothing in the inventory yet."}
+        <br />
         <br />
         <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
