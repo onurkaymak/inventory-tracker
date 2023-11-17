@@ -17,13 +17,15 @@ const CoffeeList = (props) => {
           price={coffee.price}
           roast={coffee.roast}
           quantity={coffee.quantity}
+          onCoffeeClicked={props.onCoffeeSelection}
         />)}
     </React.Fragment>
   );
 }
 
 CoffeeList.propTypes = {
-  coffeeList: PropTypes.array
+  coffeeList: PropTypes.array,
+  onCoffeeSelection: PropTypes.func
 };
 
 export default CoffeeList;
