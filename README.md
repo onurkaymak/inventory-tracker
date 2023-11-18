@@ -35,68 +35,46 @@
 </p>
 
 <p align="center">
-  <small>Initiated MM DDth, YYYY.</small>
+  <small>Initiated 11 17th, 2023.</small>
 </p>
-
-<!-- Project Links -->
-<p align="center">
-    <a href="https://github.com/onurkaymak/ParksLookupAPI.git"><big>Project Docs</big></a> ·
-    <a href="https://github.com/onurkaymak/ParksLookupAPI/issues"><big>Report Bug</big></a> ·
-    <a href="https://github.com/onurkaymak/ParksLookupAPI/issues"><big>Request Feature</big></a>
-</p>
-
-------------------------------
-<u>Table of Contents</u>
-* <a href="#🌐-about-the-project">About the Project</a>
-    * <a href="#📖-description">Description</a>
-    * <a href="#🦠-known-bugs">Known Bugs</a>
-    * <a href="#🛠-built-with">Built With</a>
-    <!-- * <a href="#🔍-preview">Preview</a> -->
-* <a href="#🏁-getting-started">Getting Started</a>
-    * <a href="#📋-prerequisites">Prerequisites</a>
-    * <a href="#⚙️-setup-and-use">Setup and Use</a>
-* <a href="#🛰️-api-documentation">API Documentation</a>
-* <a href="#🤝-contributors">Auxiliary</a>
-    * <a href="#🤝-contributors">Contributors</a>
-    * <a href="#✉️-contact-and-support">Contact</a>
-    * <a href="#⚖️-license">License</a>
-    * <a href="#🌟-acknowledgements">Acknowledgements</a>
-------------------------------
+<br/>
+<br/>
 
 ## 🌐 About the Project
 
 ### 📖 Description
-<!-- A national park API that functions as a back-end utilizing RESTful operations and JSON Web Tokens (JWT) for authentication to keep the API Read-Only except for authenticated users. -->
+A React application that tracks inventory for a local coffee shop. Application allows users to use CREATE, READ and UPDATE operations, such as:
+
+* User can see a list/menu of all available types of coffee beans.
+
+* User can submit a form to add a new coffee to the inventory.
+
+* User can click on coffee name to see its details.
+
+* User can see how many pounds of coffee beans are left in stock, default is 130 pounds.
+
+* User can  click a button to sell a pound of coffee beans. This decreases the number of pounds left by 1. 
 
 ### Component Diagram
 
 ![Alt text](<component diagram.png>)
 
+### 🛠 Built With
+
+* React
+* HTML5
+* CSS
+* JavaScript
+
+### 🛠 Setup & Installation
+
+
+
+
 ### 🦠 Known Bugs
 
 * If any bugs are discovered, please contact the author(s).
 
-### 🛠 Built With
-<!-- * [Visual Studio Code](https://code.visualstudio.com/)
-* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-* [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core)
-* [MySQL 8.0.34](https://dev.mysql.com/)
-* [Entity Framework Core 6.0.0](https://docs.microsoft.com/en-us/ef/core/)
-* [Entity Framework Core CLI Tools 6.0.0](https://learn.microsoft.com/en-us/ef/core/cli/dotnet)
-* [Postman](https://www.postman.com/) -->
-
-------------------------------
-
-### ✉️ Contact and Support
-
-If you have any feedback or concerns, please contact one of the contributors.
-
-<p>
-    <a href="https://github.com/onurkaymak/ParksLookupAPI/issues">Report Bug</a> ·
-    <a href="https://github.com/onurkaymak/ParksLookupAPI/issues">Request Feature</a>
-</p>
-
-------------------------------
 
 ### ⚖️ License
 
