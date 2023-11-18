@@ -11,7 +11,6 @@ const Coffee = (props) => {
         <br />
         <div>Name: <strong>{props.name}</strong></div>
         <br />
-        <div>Coffee Id: {props.id}</div>
         <div>Origin: {props.origin}</div>
         <div>Roast: {props.roast}</div>
         <div>Price: ${props.price}</div>

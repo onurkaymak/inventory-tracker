@@ -12,7 +12,7 @@ const CoffeeDetail = (props) => {
       <div>Roast: {coffee.roast}</div>
       <div>Price: ${coffee.price}</div>
       <div>Quantity: {coffee.quantity} lb</div>
-      <hr />
+      <br />
       <button onClick=
         {() => onCoffeeSale(coffee.id)}
         disabled={coffee.isOutOfStock && true}

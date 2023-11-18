@@ -7,7 +7,6 @@ const CoffeeList = (props) => {
 
   return (
     <React.Fragment>
-      <hr />
       {props.coffeeList.map((coffee) =>
         <Coffee
           id={coffee.id}
