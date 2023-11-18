@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <u><big>|| <b>Project Name</b> ||</big></u>
+  <b>Coffee Shop Inventory Tracker</b>
 </p>
 <p align="center">
   
@@ -13,27 +13,24 @@
     </p>
     <!-- GitHub Link -->
     <p align="center">
-        <a href="https://github.com/onurkaymak">
+        <a href="https://github.com/onurkaymak/inventory-tracker">
             <strong>By Onur Kaymak</strong>
         </a>
     </p>
     <!-- Project Shields -->
     <p align="center">
-        <a href="https://github.com/onurkaymak/ParksLookupAPI/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/onurkaymak/ParksLookupAPI.svg?style=plastic">
+        <a href="https://github.com/onurkaymak/inventory-tracker/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/onurkaymak/inventory-tracker.svg?style=plastic">
         </a>
         &nbsp;
-        <a href="https://github.com/onurkaymak/ParksLookupAPI/stargazers">
-            <img src="https://img.shields.io/github/stars/onurkaymak/ParksLookupAPI.svg?color=yellow&style=plastic">
+        <a href="https://github.com/onurkaymak/inventory-tracker/stargazers">
+            <img src="https://img.shields.io/github/stars/onurkaymak/inventory-tracker.svg?color=yellow&style=plastic">
         </a>
         &nbsp;
-        <a href="https://github.com/onurkaymak/ParksLookupAPI/issues">
-            <img src="https://img.shields.io/github/issues/onurkaymak/ParksLookupAPI?style=plastic">
+        <a href="https://github.com/onurkaymak/inventory-tracker/issues">
+            <img src="https://img.shields.io/github/issues/onurkaymak/inventory-tracker?style=plastic">
         </a>
         &nbsp;
-        <a href="https://github.com/jfpalchak/MessageBoardAPI/blob/main/LICENSE.txt">
-            <img src="https://img.shields.io/github/license/jfpalchak/MessageBoardAPI?color=orange&style=plastic">
-        </a>
     </p>    
 </p>
 
