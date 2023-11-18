@@ -21,7 +21,8 @@ class CoffeeControl extends React.Component {
     if (this.state.selectedCoffee != null) {
       this.setState({
         selectedCoffee: null,
-        isAddFormVisible: false
+        isAddFormVisible: false,
+        editing: false
       })
     } else {
       this.setState(prevState => ({
