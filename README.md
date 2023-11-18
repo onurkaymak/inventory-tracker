@@ -72,7 +72,7 @@ A React application that tracks inventory for a local coffee shop. Application a
 
 - Navigate into the project's folder in your terminal.
 
-- Please note that you need both Node.js and NPM are installed in your local machine to install all the dependencies to run this app.
+- Please note that you need both Node.js and NPM are installed in your local machine to install all the dependencies found in $`package.json` to run this app.
 
 - While you are in the root level of the project folder, type `$ npm install` in your terminal to download all the necessary dependencies.
 
