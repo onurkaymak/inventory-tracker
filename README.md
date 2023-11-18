@@ -68,7 +68,17 @@ A React application that tracks inventory for a local coffee shop. Application a
 
 ### 🛠 Setup & Installation
 
+- Clone this project from provided GitHub repository: [Repository Link](https://github.com/onurkaymak/inventory-tracker).
 
+- Navigate into the project's folder in your terminal.
+
+- Please note that you need both Node.js and NPM are installed in your local machine to install all the dependencies to run this app.
+
+- While you are in the root level of the project folder, type `$ npm install` in your terminal to download all the necessary dependencies.
+
+- Once NPM install all the dependencies, you can type `$ npm run start` in your terminal, this will start the application in a new tab in your browser.
+
+- You can also open a new tab and type `$http://localhost:3000` as URL to view it manually.
 
 
 ### 🦠 Known Bugs
