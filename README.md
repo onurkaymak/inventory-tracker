@@ -1,17 +1,10 @@
 <br>
 <p align="center">
-  <b>Coffee Shop Inventory Tracker</b>
+  <h1 align="center">Coffee Shop Inventory Tracker</h1>
 </p>
 <p align="center">
   
    <br>
-    <!-- <a href="https://www.nps.gov/index.htm" style="display:flex;justify-content:center;">
-        <img src="https://www.nps.gov/vafo/learn/kidsyouth/images/NPS-Arrowhead_v3.png" style="width:250px;height:250px;">
-    </a> -->
-    <p align="center">
-      ___________________________
-    </p>
-    <!-- GitHub Link -->
     <p align="center">
         <a href="https://github.com/onurkaymak/inventory-tracker">
             <strong>By Onur Kaymak</strong>
@@ -37,7 +30,6 @@
 <p align="center">
   <small>Initiated 11 17th, 2023.</small>
 </p>
-<br/>
 <br/>
 
 ## 🌐 About the Project
