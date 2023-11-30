@@ -45,7 +45,7 @@ class CoffeeControl extends React.Component {
     this.setState({ selectedCoffee }); // ES6 way to set object key-value.
   };
 
-  handleCoffeeSale = (id,) => {
+  handleCoffeeSale = (id) => {
     // When we use the method shown in Help Queue project, selected item changes its position in the list after edit its state, I think that's bad UI experience. 
     //I implemented a way to keep its position at the list after any changes in the state.
 
